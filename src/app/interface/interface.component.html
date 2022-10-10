@@ -1,0 +1,78 @@
+<div id="loading-details" *ngIf="!ddiLoaded" class="row content-area">
+  <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+</div>
+
+<ng-container class="interface-container">
+  <mat-toolbar class="interface-header">
+    <mat-toolbar-row>
+      <h1 class="header-text title">{{title}}</h1>
+      <span class="fill-space"></span>
+      <mat-form-field class="lang-select">
+        <select matNativeControl title="{{'INTERFACE.LANG' | translate}}" [attr.aria-label]="'INTERFACE.LANG' | translate" #langSelect (change)="translate.use(langSelect.value)">
+          <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{lang}}</option>
+        </select>
+      </mat-form-field>
+    </mat-toolbar-row>
+    <mat-toolbar-row class="header-text">
+      {{filename}}
+    </mat-toolbar-row>
+    <mat-toolbar-row class="header-text citation">
+      <span>{{firstCitat}}<a href="{{doi}}">{{doi}}</a>{{secondCitat}}</span>
+    </mat-toolbar-row>
+    <mat-toolbar-row class="button-row">
+      <span class="groups-toggle">
+        <ng-container *ngIf="sidenav.opened; else showGroups">
+          <button mat-button (click)="sidenav.toggle()">
+            <mat-icon color="accent" [attr.aria-label]="'GROUPS.HIDE' | translate">keyboard_arrow_left</mat-icon>
+            <span class="button-label">{{'GROUPS.HIDE' | translate }}</span>
+          </button>
+        </ng-container>
+        <ng-template #showGroups>
+          <button mat-button (click)="sidenav.toggle()">
+            <mat-icon color="accent" [attr.aria-label]="'GROUPS.SHOW' | translate">keyboard_arrow_right</mat-icon>
+            <span class="button-label">{{'GROUPS.SHOW' | translate }}</span>
+          </button>
+        </ng-template>
+      </span>
+      <span class="fill-space"></span>
+      <span class="action-buttons">
+        <button mat-button (click)="onSelectVarsForCrossTab()">
+          <mat-icon color="accent" [attr.aria-label]="'VARDIALSTAT.CROSSTAB' | translate" [attr.matTooltip]="'VARDIALSTAT.CROSSTAB' | translate">table_chart</mat-icon>
+          <span class="button-label">{{'VARDIALSTAT.CROSSTAB' | translate}}</span>
+        </button>
+      </span>
+      <span class="action-buttons">
+        <button mat-button (click)="onShowSumStat()">
+          <mat-icon color="accent" [attr.aria-label]="'VARDIALSTAT.SUMMARYSTAT' | translate" [attr.matTooltip]="'VARDIALSTAT.SUMMARYSTAT' | translate">notes</mat-icon>
+          <span class="button-label">{{'VARDIALSTAT.SUMMARYSTAT' | translate}}</span>
+        </button>
+      </span>
+      <span class="download">
+        <mat-form-field class="download-select">
+          <mat-select #downloadSelect [(ngModel)]="selected" (selectionChange)="onSave($event)" [attr.aria-label]="'SAVE.DOWNLOAD' | translate">
+            <mat-option value="0">{{'SAVE.DOWNLOAD' | translate}}</mat-option>
+            <mat-option value="1">{{'SAVE.DOWNLOADSUB' | translate}}</mat-option>
+            <mat-option value="2">{{'SAVE.DOWNLOADORIG' | translate}}</mat-option>
+            <mat-option value="3"> {{'SAVE.DOWNLOADTAB' | translate}}</mat-option>
+            <mat-option value="4">{{'SAVE.DOWNLOADRDATA' | translate}}</mat-option>
+            <mat-option value="5">{{'SAVE.DOWNLOADVARMETA' | translate}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </span>
+
+    </mat-toolbar-row>
+
+  </mat-toolbar>
+
+  <mat-sidenav-container class="group-container">
+    <mat-sidenav mode="side" opened class="side_nav" #sidenav #scrollMe>
+      <app-var-group [variableGroups]="variableGroups" (subSetRows)="broadcastSubSetRows($event)" [selection]="selection"
+                     (parentScrollNav)="scrollNav()"
+      ></app-var-group>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <app-var [variableGroups]="variableGroups" [selection]="selection"></app-var>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+</ng-container>

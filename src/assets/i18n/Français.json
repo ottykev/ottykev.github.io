@@ -1,0 +1,90 @@
+{
+  "INTERFACE": {
+    "LANG": "Langue"
+  },
+  "GROUPS": {
+    "HIDE": "Masquer les groupes",
+    "SHOW": "Afficher les groupes",
+    "ALLVAR": "Toutes les variables"
+  },
+  "SAVE": {
+    "DOWNLOAD": "Télécharger",
+    "DOWNLOADSUB": "Télécharger le sous-ensemble",
+    "DOWNLOADORIG": "Télécharger le fichier en format original",
+    "DOWNLOADTAB": "Télécharger le fichier délimité par des tabulations",
+    "DOWNLOADRDATA": "Télécharger le fichier en format RData",
+    "DOWNLOADVARMETA": "Télécharger les métadonnées des variables",
+    "NOFILEID": "Téléchargement impossible, il n'y a pas d'identifiant de fichier",
+    "NOSELECT": "Aucune sélection n'a été faite"
+  },
+  "VAR": {
+    "SEARCH": "Chercher",
+    "SELECT": "Sélectionner",
+    "SELECTALL": "Tout sélectionner",
+    "DESELECT": "Désélectionner",
+    "ID": "ID",
+    "NAME": "Nom",
+    "LABEL": "Libellé",
+    "WEIGHT": "Poids",
+    "VIEW": "Afficher les catégories",
+    "VIEWQUEST": "Afficher les questions",
+    "VIEWSUMSTAT": "Afficher les statistiques sommaires"
+  },
+  "VARDIALOG":{
+    "VARINFO": "Information sur la variable",
+    "LITQ": "Question littérale",
+    "INTINSTR": "Directives d'entrevue",
+    "POSTQ": "Instructions à propos de la question posée",
+    "UNIVERSE": "Univers",
+    "NOTES" : "Remarques",
+    "GROUP" : "Groupe",
+    "WEIGHTVAR": "Variable de pondération",
+    "UNWEIGHTED": "Non-pondéré(e)",
+    "ISWEIGHT": "Pondéré(e)",
+    "UPDATE": "Mettre à jour",
+    "CANCEL": "Annuler"
+  },
+  "VARDIALSTAT": {
+    "CLOSE": "Fermer",
+    "VALUES": "Valeurs",
+    "CATEGORIES": "Catégories",
+    "COUNT": "Nombre",
+    "COUNTPER": "Nombre d'observations en %",
+    "WEIGHTCOUNT": "Nombre d'observations (pondéré)",
+    "WEIGHTCOUNTPER": "Nombre d'observations (pondéré) en %",
+    "MEDIAN": "Médiane",
+    "STDEV": "Écart type",
+    "MIN": "Minimum",
+    "MAX": "Maximum",
+    "MEAN": "Moyenne",
+    "VALD": "Nombre d'observations valides",
+    "INVD": "Nombre d'observations manquantes",
+    "OTHER": "Autre",
+    "SUMMARYSTAT": "Statistiques sommaires",
+    "SELVARNOTE": "Il n'y a pas de variables",
+    "CROSSTAB": "Tableau croisé",
+    "NOCATEGORIES": "Variable sans catégorie attribuée"
+  },
+  "PAGINATOR": {
+    "ITEMS_PER_PAGE": "Éléments par page",
+    "NEXT_PAGE": "Page suivante",
+    "PREVIOUS_PAGE": "Page précédente",
+    "RANGE": "{{startIndex}} - {{endIndex}} de {{length}}"
+  },
+  "CROSSTAB": {
+    "TABLE": "Tableau croisé",
+    "VARS": "Sélectionner les variables {{group}} pour le tableau croisé",
+    "ALLVAR": "Toutes les variables",
+    "ROWS": "Lignes",
+    "COLUMNS": "Colonnes",
+    "TOTAL": "Total",
+    "DATAVERSE": "L'outil Data Explorer n'est pas connecté à Dataverse",
+    "TOOMANYVAR": "Le nombre de variables sélectionnées est trop grand. Ne pas sélectionner plus de {{length}} variable(s)",
+    "TOOMANYCAT": "Le nombre du catégories est trop grand.",
+    "OK": "Ok",
+    "MOVETOROWS": "Déplacer vers les lignes",
+    "MOVETOCOLS": "Déplacer vers les colonnes",
+    "REMOVEFROMROWS": "Retirer des lignes",
+    "REMOVEFROMCOLS": "Retirer des colonnes"
+  }
+}

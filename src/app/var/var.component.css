@@ -1,0 +1,57 @@
+
+.active {
+  background: #6d9cff;
+}
+
+.mat-header-cell {
+  color: rgba(0,0,0,.6);
+}
+
+.unvis {
+  visibility: hidden;
+}
+
+.mat-radio-group {
+  margin: 15px 0;
+}
+
+.mat-radio-button {
+  margin: 5px;
+}
+
+table {
+  width: 100%;
+}
+
+th.mat-header-cell,
+td.mat-cell {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.view-col {
+  width: 4%;
+}
+
+.search-bar {
+  background: white;
+}
+
+.mat-paginator {
+  background: transparent;
+}
+
+/* Smaller screen display */
+
+@media (max-width: 805px) {
+
+  .mat-toolbar-row,
+  .mat-toolbar-single-row {
+    height: 100%;
+  }
+
+  .search-bar .mat-form-field {
+    width: 45%;
+  }
+
+}

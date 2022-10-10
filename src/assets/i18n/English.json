@@ -1,0 +1,90 @@
+{
+  "INTERFACE": {
+    "LANG": "Language"
+  },
+  "GROUPS": {
+    "HIDE": "Hide Groups",
+    "SHOW": "Show Groups",
+    "ALLVAR": "All Variables"
+  },
+  "SAVE": {
+    "DOWNLOAD": "Download",
+    "DOWNLOADSUB": "Download subset",
+    "DOWNLOADORIG": "Download original file",
+    "DOWNLOADTAB": "Download tab-delimited file",
+    "DOWNLOADRDATA": "Download RData format file",
+    "DOWNLOADVARMETA": "Download variable metadata",
+    "NOFILEID": "Cannot download, there is no file id",
+    "NOSELECT": "There was no selection"
+  },
+  "VAR": {
+    "SEARCH": "Search",
+    "SELECT": "Select",
+    "SELECTALL": "Select all",
+    "DESELECT": "Remove Selection",
+    "ID": "ID",
+    "NAME": "Name",
+    "LABEL": "Label",
+    "WEIGHT": "Weight",
+    "VIEW": "View Categories",
+    "VIEWQUEST": "View Questions",
+    "VIEWSUMSTAT": "View Summary Statistics"
+  },
+  "VARDIALOG":{
+    "VARINFO": "Variable Information",
+    "LITQ": "Literal Question",
+    "INTINSTR": "Interviewer Instructions",
+    "POSTQ": "Post Question",
+    "UNIVERSE": "Universe",
+    "NOTES" : "Notes",
+    "GROUP" : "Group",
+    "WEIGHTVAR": "Weight Variable",
+    "UNWEIGHTED": "Unweighted",
+    "ISWEIGHT": "Is Weight",
+    "UPDATE": "Update",
+    "CANCEL": "Cancel"
+  },
+  "VARDIALSTAT": {
+    "CLOSE": "Close",
+    "VALUES": "Values",
+    "CATEGORIES": "Categories",
+    "COUNT": "Count",
+    "COUNTPER": "Count Percentage(%)",
+    "WEIGHTCOUNT": "Weighted Count",
+    "WEIGHTCOUNTPER": "Weighted Count Percentage(%)",
+    "MEDIAN": "Median",
+    "STDEV": "Standard deviation",
+    "MIN": "Minimum",
+    "MAX": "Maximum",
+    "MEAN": "Mean",
+    "VALD": "Total Valid Count",
+    "INVD": "Total Invalid Count",
+    "OTHER": "Other",
+    "SUMMARYSTAT": "Summary Statistics",
+    "SELVARNOTE": "No variables selected. Please select variables to continue.",
+    "CROSSTAB": "Cross Tabulation",
+    "NOCATEGORIES": "This variable does not have any categories assigned"
+  },
+  "PAGINATOR": {
+    "ITEMS_PER_PAGE": "Items per page",
+    "NEXT_PAGE": "Next page",
+    "PREVIOUS_PAGE": "Previous page",
+    "RANGE": "{{startIndex}} - {{endIndex}} of {{length}}"
+  },
+  "CROSSTAB": {
+    "TABLE": "Cross Tabulation Table",
+    "VARS": "Select Variables {{group}} For Cross Tabulation",
+    "ALLVAR": "All Variables",
+    "ROWS": "Rows",
+    "COLUMNS": "Columns",
+    "TOTAL": "Total",
+    "DATAVERSE": "Data Explorer is not connected to Dataverse",
+    "TOOMANYVAR": "Too many variables selected. Please select no more than {{length}} variables.",
+    "TOOMANYCAT": "Number of categories is too big.",
+    "OK": "OK",
+    "MOVETOROWS": "Move to Rows",
+    "MOVETOCOLS": "Move to Columns",
+    "REMOVEFROMROWS": "Remove from Rows",
+    "REMOVEFROMCOLS": "Remove from Columns"
+  }
+}
